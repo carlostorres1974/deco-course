@@ -1,0 +1,16 @@
+title: Deco
+description: 'es un sitio para presentar una tarea en la asignatura de Diseño Web '
+template:
+  repo: deco-template
+  name: deco
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
